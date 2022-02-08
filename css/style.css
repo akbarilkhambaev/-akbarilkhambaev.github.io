@@ -300,6 +300,7 @@ body{
 }
 .tables .btn-outline-success, .tables .btn-outline-danger {
     padding: 3px 10px;
+    float: right;
 } 
 .tables .grey_text{
     font-size: 14px;
@@ -324,4 +325,23 @@ body{
     background:#9BABC5 ;
     top: 80px;
     left: 0;
+}
+.tables .alert-success, .tables .alert-danger, .tables .alert-warning {
+    padding: 3px 10px;
+    float: right;
+    line-height: 26px;
+    border-radius: 6px;
+    margin: 3px 0 0 0 ;
+} 
+.tables .alert-success {
+    background: #428777;
+    color:#fff ;
+}
+.tables .alert-danger {
+    background: #EE4444;
+    color: #fff;
+}
+.tables .alert-warning {
+    background: #F0CA43;
+    color: #fff;
 }
