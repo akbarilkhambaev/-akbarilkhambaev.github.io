@@ -68,7 +68,6 @@ body{
 .notifications {
     display: flex;
     align-items: center;
-    width: 504px;
     height: 56px;
     justify-content: space-between;
 }
@@ -77,15 +76,26 @@ body{
     height: 56px;
     border-radius: 50%;
     border:none;
+    position: relative;
 }
 .notifications ul {
-    width:248px;
+    width:70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .notifications img {
     width: 45%;
+}
+.notifications ul .notice ::after{
+    content: "";
+    background: #428777;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: -10px;
 }
 .user {
     display: flex;
@@ -112,7 +122,11 @@ body{
     line-height: 24.55px;
 }
 .sidebar li{
-    padding: 15px 0;
+    padding: 5px 0;
+    margin: 15px 0;
+    position: relative;
+    line-height: 15px;
+
 }
 .sidebar li span {
     padding-left: 35px;
@@ -120,8 +134,13 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    line-height: 25px;
     color: #9BABC5;
+}
+.sidebar .active {
+    border-right: 3px solid #428777;
+}
+.sidebar .active span {
+    color: #428777;
 }
 .sidebar img {
     color: #9BABC5;
@@ -176,17 +195,25 @@ body{
 }
 .sidebar li:nth-child(3) span::after {
     content: "3";
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: #EE4444;
     position: absolute;
     border-radius: 50%;
     text-align: center;
-    left: 75%;
+    top :50%;
+    left: 80%;
     color: #fbfcff;
-    font-size: 11px ;
+    font-size: 10px ;
     font-family: 'Poppins';
     font-weight: 300;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transform: translateY(-50%);
+    margin-right: -50%;
 }
 .card-common_2 {
     width: 100%;
@@ -295,12 +322,12 @@ body{
     background: #fff;
 }
 .bold_style {
-    line-height: 50px;
+    line-height: 80px;
     font-weight: bold;
 }
 .tables .btn-outline-success, .tables .btn-outline-danger {
     padding: 3px 10px;
-    float: right;
+    float: none;
 } 
 .tables .grey_text{
     font-size: 14px;
@@ -344,4 +371,158 @@ body{
 .tables .alert-warning {
     background: #F0CA43;
     color: #fff;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.action button {
+    border-radius: 24px;
+    background: #428777;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+.action .btn:hover {
+    color: #fff !important;
+}
+.btn-group input, .btn-group label{
+    border-radius: 25px;
+}
+.wallet {
+    padding-bottom: 0 !important;
+}
+
+.transfer {
+    width:100% ;
+    background: #428777;
+    height: 85px;
+    border-radius: 25px;
+
+}
+.send_invoice {
+    width: 100%;
+    background: #F0CA43;
+    height: 85px;
+    border-radius: 25px;
+}
+.transfer span, .send_invoice span {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: space-between;
+}
+.transfer span img, .send_invoice span img {
+    width: 100%;
+}
+
+.transfer , .send_invoice {
+    padding-left:24px;
+    display: flex;
+    align-items: center;
+}
+.transfer div, .send_invoice div {
+    padding-left: 40px;
+    color: #fff;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 33px;
+
+} 
+.tables .col-lg-3 {
+    padding: 0 28px 28px;
+}
+.tables .col-lg-3{
+    padding: 0 28px;
+
+}
+.tables .col-lg-3 h4{
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 24px;
+    font-family: 'Nunito';
+    font-weight: bold;
+
+}
+.tables .col-lg-3 .info_user {
+    display: flex;
+    justify-content: flex-start;
+}
+.tables .col-lg-3 .info_user div {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222132;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.tables .col-lg-3 .info_user span {
+    font-size: 14px;
+    color: #9BABC5;
+    font-family: 'nunito';
+}
+.tables .col-lg-3 .info_user img {
+    width: 54px;
+    height: 54px;
+}
+.tables .col-lg-3 .col-lg-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.tables .col-lg-3 .col-lg-12 label {
+    font-size: 15px;
+    font-family: 'Nunito';
+    color: #428777;
+}
+.card-invoice {
+    width: 100%;
+    height: 200px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    padding: 30px;
+}
+.card-invoice_g {
+    font-size: 24px;
+    color: #428777;
+    display: flex;
+    justify-content: space-between;
+}
+.card-invoice h3{
+    font-size: 33px;
+    color: #222132;
+    padding: 16px 0 8px 0;
+    font-weight: bold;
+}
+.card-invoice p {
+    font-size: 15px;
+    color: #9BABC5;
+}
+.tables td .table_user {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.tables td img{
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+    
+}
+.bold_style .user_tab span {
+    line-height: 15px;
+}
+.bold_style .user_tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
 }

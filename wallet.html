@@ -42,8 +42,8 @@
              <div class="col-lg-2">
                 <div class="row">
                     <ul class="sidebar">
-                        <li class="active"><a href="index.html"><img src="images/001-dashboarddash.svg" alt=""> <span>Dashboard</span></a>  </li>
-                        <li><a href="wallet.html"><img src="images/wallet.svg" alt=""> <span>Wallet</span> </a> </li>
+                        <li><a href="index.html"><img src="images/not-active.svg" alt=""> <span>Dashboard</span></a>  </li>
+                        <li class="active"><a href="wallet.html"><img src="images/Wallet-active.svg" alt=""> <span>Wallet</span> </a> </li>
                         <li><a href="invoice.html"><img src="images/invoice.svg" alt=""> <span>Invoices</span></a>  </li>
                         <li><a href="create.html"> <img src="images/create.svg" alt="">  <span>Create invoices</span> </a></li>
                         <li><a href="card.html"> <img src="images/card.svg" alt=""> <span>Card</span> </a></li>
@@ -53,121 +53,137 @@
                 </div>
              </div>
              <div class="col-lg-10">
-                <h2>Dashboard</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card-common">
-                            <p>Balance</p>
-                            <h5>$4811,21</h5>
-                            <div class="cube"></div>
-                            <div class="cube1"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card-common_2">
-                            <p>Income</p>
-                            <h5>$48,21</h5>
-                            <img src="images/up.svg" alt="" class="up">
-                            <img src="images/Graph_up.svg" alt="" class="graph_up">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card-common_2">
-                            <p>Outcome</p>
-                            <h5>$4811,21</h5>
-                            <img src="images/down.png" alt="" class="up">
-                            <img src="images/Graph_down.svg" alt="" class="graph_up">
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="card-common_3">
-                            <h5>Limit</h5>  
-                            <img src="images/Chart_4.svg" alt="">
-                        </div>
-                    </div>    
-                </div>
-                <div class="row diagrams">
-                    <div class="col-lg-6 ">
-                        <img src="images/Transaction Overview.png" alt="">
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Spending</h4>
-                        <div class="row colons">
-                            <div class="col-lg-6"><img src="images/04.svg" alt=""></div>
-                            <div class="col-lg-6"><img src="images/04.svg" alt=""></div>
-                            <div class="col-lg-6"><img src="images/04.svg" alt=""></div>
-                            <div class="col-lg-6"><img src="images/04.svg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="wallet">Wallet</h2>
+               
                 <div class="row tables">
-                    <div class="col-lg-6">
-                        <h4>Lastest Invoices</h4>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-8">
+                               <div class="card-common">
+                                   <p>Balance</p>
+                                   <h5>$4811,21</h5>
+                                   <div class="cube">
+                                   </div>
+                                   <div class="cube1">
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-between flex-column align-content-center">
+                                 <div class="transfer ">
+                                    <span><img src="images/transfer.svg" alt=""> </span> <div>Transfer</div>
+                                 </div>
+                                 <div class="send_invoice">
+                                    <span><img src="images/invoice_2.svg" alt=""> </span><div>Send Invoice</div>
+                                 </div>
+                            </div>
+                       </div>
+                        <div class="action">
+                            <h4>Lastest Invoices</h4>
+                            <div class="btn-group buttons" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-success" for="btnradio1">Monthly</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-success" for="btnradio2">Weekly</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-success" for="btnradio3">Today</label>
+                              </div>
+                        </div>
                         <table>
                             <tr class="td_line">
                                     <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                                     <td>Recipient</td>
                                     <td>Date</td>
+                                    <td>Email</td>
                                     <td>Status</td>
+                                    <td>    </td>
                             </tr>
                             <tr class="bold_style">
                                 <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                                 <td>Rob B.</td>
                                 <td class="grey_text">March 10, 2021</td>
+                                <td class="grey_text">rob@email.com</td>
                                 <td><span class="btn btn-outline-success">Paid</span> </td>
+                                <td></td>
                               </tr>
                             <tr class="bold_style">
                             <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                             <td>Samantha W.</td>
                             <td class="grey_text">March 10, 2021</td>
+                            <td class="grey_text">samantha@email.com</td>
                             <td><span class="btn btn-outline-danger">Unpaid</span> </td>
+                            <td></td>
                              </tr>
                               <tr class="bold_style">
                             <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                             <td>Karen H.</td>
                             <td class="grey_text">March 10, 2021</td>
+                            <td class="grey_text">karen@email.com</td>
                             <td><span class="btn btn-outline-danger">Unpaid</span> </td>
+                            <td></td>
                              </tr>
                               <tr class="bold_style">
                             <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                             <td>Johny A.</td>
                             <td class="grey_text">March 10, 2021</td>
+                            <td class="grey_text">johnny@email.com</td>
                             <td><span class="btn btn-outline-success">Paid</span> </td>
+                            <td></td>
                              </tr>
                              <tr class="bold_style">
                             <td style="display: flex; align-items: center;"><input type="checkbox"><span>ID Invoice</span></td>
                             <td>Rob B.</td>
                             <td class="grey_text">March 10, 2021</td>
+                            <td class="grey_text">rob@email.com</td>
                             <td><span class="btn btn-outline-success">Paid</span> </td>
+                            <td></td>
                              </tr>
                             
                            
                         </table>
                     </div>
-                    <div class="col-lg-6">
-                        <h4>Previous Transaction</h4>
-                        <p class="post_text">Bulan Ini</p>
-                        <table>
-                            <tr class="td_line_1 align-items-center">
-                                <td style="display: flex; align-items: center;"> <img src="images/up.svg" alt=""><span style="font-weight: bold;">Netfilx Subcription</span></td>
-                                <td class="grey_text">March 2, 2021</td>
-                                <td class="bold_text">+$45</td>
-                                <td><span class="alert alert-success">Completed</span> </td>
-                              </tr>
-                            <tr class="td_line_1">
-                            <td style="display: flex; align-items: center;"> <img src="images/up.svg" alt=""><span style="font-weight: bold;">Paypal Payment</span></td>
-                            <td class="grey_text">March 2, 2021</td>
-                            <td class="bold_text">+$480</td>
-                            <td><span class="alert alert-danger">Canceled</span> </td>
-                                </tr>
-                             <tr class="td_line_1">
-                            <td style="display: flex; align-items: center;"> <img src="images/up.svg"     alt=""><span style="font-weight: bold;">Spotify Subciption</span></td>
-                            <td class="grey_text">March 2, 2021</td>
-                            <td class="bold_text">+$16</td>
-                            <td><span class="alert alert-warning">Pending</span> </td>
-                              </tr>
-                        </table>
+                    <div class="col-lg-3">
+                        <h4>Invoices Sent</h4>
+                        <div class="col-lg-12">
+                            <div class="info_user">
+                                <img src="images/Rectangle 47.png" alt="">
+                                <div>Karen H. <br>
+                                    <span>1h Ago</span>
+                                </div>
+                            </div>
+                            <label for="">$45</label>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="info_user">
+                                <img src="images/Rectangle 47.png" alt="">
+                                <div>Karen H. <br>
+                                    <span>1h Ago</span>
+                                </div>
+                            </div>
+                            <label for="">$45</label>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="info_user">
+                                <img src="images/Rectangle 47.png" alt="">
+                                <div>Karen H. <br>
+                                    <span>1h Ago</span>
+                                </div>
+                            </div>
+                            <label for="">$45</label>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="info_user">
+                                <img src="images/Rectangle 47.png" alt="">
+                                <div>Karen H. <br>
+                                    <span>1h Ago</span>
+                                </div>
+                            </div>
+                            <label for="">$45</label>
+                        </div>
+                        
                     </div>
+
                 </div>
              </div>
         </div>   
