@@ -526,3 +526,82 @@ body{
     justify-content: space-between;
     padding-top: 20px;
 }
+.create_invoice {
+    border-radius: 25px;
+}
+#inputEmail4, #inputPassword4 {
+    background: #EFEFEF;
+}
+textarea[name="form_textarea"]{
+    resize: none;
+}
+.form-select {
+    color: rgba(34, 33, 50, 0.7);
+}
+.button_save {
+    text-align: center;
+}
+.button_save .btn-outline-secondary {
+    background: #428777;
+    color: #fff;
+    border-color: #428777;
+    outline: none;
+    font-size: 17px;
+}
+.button_save .btn-outline-secondary label {
+    line-height: 35px;
+}
+.button_save .btn-check:checked + .btn-outline-secondary{
+    background: #fff;
+    color: #428777;
+    border-color: #428777;
+}
+.button_save i {
+    padding-right: 10px;
+}
+.button_save .btn {
+    line-height: 35px;
+    border: none;
+}
+/* .carousel_1 img:first{
+    width: 90%;
+    height: 100%;
+} */
+.carousel_1 img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.carousel_1 {
+    align-items: center;
+    text-align: center;
+}
+.card-table {
+    font-size: 14px;
+}
+.card-table .td_line {
+    color: #9BABC5;
+}
+.border_radius {
+    border-radius: 25px;
+    background: #fff;
+}
+.bg-grey {
+    background: #EFEFEF;
+}
+.sent {
+    background: #428777;
+    color: #fff;
+}
+
+.sent:hover {
+    color: #FFFFFF;
+}
+.sent img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+form {
+    font-family: 'Nunito';
+}
